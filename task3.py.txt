@@ -1,0 +1,9 @@
+#Author : SampathKumar Medam
+#program that accepts a sentence and replace each occurrence of ‘python’ with ‘pythons’
+def replace_python(sentence):
+    replaced_sentence = sentence.replace("python", "pythons")
+    return replaced_sentence
+
+input_sentence = input("Enter a sentence: ")
+modified_sentence = replace_python(input_sentence)
+print("Modified sentence:", modified_sentence)

@@ -1,0 +1,12 @@
+#Author : SampathKumar Medam
+# Task 1: Manipulating Strings
+input_string = input("Enter a string: ")  # Input the string
+char_list = list(input_string)  # Convert the string to a list of characters
+
+if len(char_list) >= 2:  # Ensure there are at least 2 characters to delete
+    del char_list[-2:]  # Delete the last two characters
+    char_list.reverse()  # Reverse the list
+    result = ''.join(char_list)  # Convert the list back to a string
+    print("Modified and reversed string:", result)
+else:
+    print("String must have at least 2 characters to perform the operation

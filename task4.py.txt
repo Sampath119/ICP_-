@@ -1,0 +1,24 @@
+#Author : SampathKumar Medam
+#write a program to print the letter grade based on an input class score. Use the grading scheme we are using in this class.
+def calculate_class_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
+
+# Get input class score from the user
+try:
+    class_score = float(input("Enter the class score: "))
+    if 0 <= class_score <= 100:
+        letter_grade = calculate_class_grade(class_score)
+        print("The letter grade for the score {:.2f} is: {}".format(class_score, letter_grade))
+    else:
+        print("Invalid score. Please enter a score between 0 and 100.")
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
